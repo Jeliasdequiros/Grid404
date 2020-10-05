@@ -1,4 +1,61 @@
 /* *********************************** */
 /* *** Estilos SOLO para index.html *** */
 /* *********************************** */
+html, a{
+    font-family: sans-serif;
+    color: #3f3f3f;
+    text-decoration: none;
+}
 
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(200px, 300px) 200px;
+    grid-template-areas: 
+    "titulo cuatro"
+    "parrafo cuatro"
+    "subtitulo cuatro"
+    "navegador cuatro"
+    "boton cuatro"
+    ;
+    justify-content: center;
+    align-content: center;
+
+    gap: 1rem;
+}
+.titulo{
+    grid-area: titulo;
+    font-size: 2rem;
+}
+.parrafo{
+    grid-area: parrafo;
+    font-size: 1rem;
+}
+.subtitulo{
+    grid-area: subtitulo;
+    font-size: 0.8rem;
+}
+.navegador{
+    grid-area: navegador;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: space-around;
+}
+.navegador > *:hover{
+    color: orange;
+    text-decoration: underline;
+}
+.boton{
+    grid-area: boton;
+    font-size: 0.8rem;
+    background-color: orange;
+    padding: 0.3em 1em;
+    border-radius: 5px;
+    justify-self: start;
+}
+.cuatro{
+    grid-area: cuatro;
+    justify-self: center;
+    align-self: center;
+    font-size: 7rem;
+}
