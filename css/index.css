@@ -5,19 +5,20 @@ html, a{
     font-family: sans-serif;
     color: #3f3f3f;
     text-decoration: none;
+    background-color: #f4f4f4;
 }
 
 main{
     height: 100vh;
     display: grid;
-    grid-template-columns: minmax(200px, 300px) 200px;
+    grid-template-columns: [inicio]minmax(200px, 300px) [centro] auto[final];
     grid-template-areas: 
-    "titulo cuatro"
-    "parrafo cuatro"
-    "subtitulo cuatro"
-    "navegador cuatro"
-    "boton cuatro"
-    ;
+    "titulo     cuatro"
+    "parrafo    cuatro"
+    "subtitulo  cuatro"
+    "navegador  cuatro"
+    "boton      cuatro";
+    
     justify-content: center;
     align-content: center;
 
@@ -25,6 +26,7 @@ main{
 }
 .titulo{
     grid-area: titulo;
+    
     font-size: 2rem;
 }
 .parrafo{
@@ -55,7 +57,6 @@ main{
 }
 .cuatro{
     grid-area: cuatro;
-    justify-self: center;
+    font-size: 8rem;
     align-self: center;
-    font-size: 7rem;
 }
